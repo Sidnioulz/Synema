@@ -1,0 +1,5 @@
+203.73.94.4	users:	2	reussies:	5	echouees:	3
+145.128.124.62	users:	5	reussies:	10	echouees:	15
+161.12.13.231	users:	9	reussies:	4	echouees:	5
+145.128.124.62	users:	7	reussies:	7	echouees:	0
+171.55.129.187	users:	10	reussies:	0	echouees:	12

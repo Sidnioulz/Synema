@@ -1,0 +1,48 @@
+[**] [1:100000160:2] COMMUNITY SIP TCP/IP message flooding directed to SIP proxy [**]
+[Classification: Attempted Denial of Service] [Priority: 2] 
+01/19-11:43:13.382006 192.168.1.0:42377 -> 225.189.191.58:80
+TCP TTL:64 TOS:0x0 ID:12547 IpLen:20 DgmLen:40 DF
+***A**** Seq: 0x627AFB64  Ack: 0x19A43EF  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:100000160:2] COMMUNITY SIP TCP/IP message flooding directed to SIP proxy [**]
+[Classification: Attempted Denial of Service] [Priority: 2] 
+01/19-11:43:14.245595 225.189.191.58:80 -> 192.168.1.0:42377
+TCP TTL:64 TOS:0x0 ID:810 IpLen:20 DgmLen:1480
+***AP*** Seq: 0x19EC50F  Ack: 0x627AFB64  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:100000160:2] COMMUNITY SIP TCP/IP message flooding directed to SIP proxy [**]
+[Classification: Attempted Denial of Service] [Priority: 2] 
+01/19-11:43:14.756202 224.123.46.230:80 -> 192.168.1.0:41225
+TCP TTL:64 TOS:0x0 ID:1012 IpLen:20 DgmLen:1480
+***AP*** Seq: 0x19F82A2  Ack: 0x627F9FC1  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:100000160:2] COMMUNITY SIP TCP/IP message flooding directed to SIP proxy [**]
+[Classification: Attempted Denial of Service] [Priority: 2] 
+01/19-11:47:53.369352 225.189.191.58:80 -> 192.168.1.0:44986
+TCP TTL:64 TOS:0x0 ID:11927 IpLen:20 DgmLen:1480
+***AP*** Seq: 0x3D85D9E  Ack: 0x6808D8A7  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:100000160:2] COMMUNITY SIP TCP/IP message flooding directed to SIP proxy [**]
+[Classification: Attempted Denial of Service] [Priority: 2] 
+01/19-11:47:53.608709 192.168.1.0:44986 -> 225.189.191.58:80
+TCP TTL:64 TOS:0x0 ID:1656 IpLen:20 DgmLen:40 DF
+***A**** Seq: 0x6808D8A7  Ack: 0x3DA799E  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:100000160:2] COMMUNITY SIP TCP/IP message flooding directed to SIP proxy [**]
+[Classification: Attempted Denial of Service] [Priority: 2] 
+01/19-16:51:03.989416 63.177.168.201:443 -> 192.168.1.0:37773
+TCP TTL:64 TOS:0x0 ID:513 IpLen:20 DgmLen:40
+***A**** Seq: 0xA018C20  Ack: 0x9C7708FF  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:100000160:2] COMMUNITY SIP TCP/IP message flooding directed to SIP proxy [**]
+[Classification: Attempted Denial of Service] [Priority: 2] 
+01/19-16:52:27.344373 63.177.168.201:443 -> 192.168.1.0:59243
+TCP TTL:64 TOS:0x0 ID:843 IpLen:20 DgmLen:285
+***AP*** Seq: 0xA922D09  Ack: 0xE76BCFBE  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:100000160:2] COMMUNITY SIP TCP/IP message flooding directed to SIP proxy [**]
+[Classification: Attempted Denial of Service] [Priority: 2] 
+01/19-16:54:18.178066 63.177.168.201:443 -> 192.168.1.0:59263
+TCP TTL:64 TOS:0x0 ID:1345 IpLen:20 DgmLen:40
+***A**** Seq: 0xB86328C  Ack: 0x5A81AFAF  Win: 0xFFFF  TcpLen: 20
+

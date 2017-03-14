@@ -1,5 +1,0 @@
-210.191.138.110	users:	2	reussies:	5	echouees:	3
-64.103.85.8	users:	5	reussies:	10	echouees:	15
-216.237.122.195	users:	9	reussies:	4	echouees:	5
-64.103.85.8	users:	7	reussies:	7	echouees:	0
-78.69.40.106	users:	10	reussies:	0	echouees:	12

