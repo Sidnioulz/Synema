@@ -1,0 +1,21 @@
+     compare time: Fri Nov 27 23:08:03 2009
+             host: host2
+      scan config: default.linux (c8ce9c09)
+         log file: 5
+    base database: 4
+ compare database: 5
+
+
+
+Change Statistics:
+----------------------------------
+
+        checksums: 0
+       SUID files: 0
+ root-owned files: 0
+ file permissions: 0
+              new: 0
+          missing: 0
+
+total differences: 0
+

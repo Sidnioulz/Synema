@@ -1,0 +1,5 @@
+# Infinite loop:
+Add 1 small
+Add 1 small
+Make second small large
+Add 1 large: Infinite loop!

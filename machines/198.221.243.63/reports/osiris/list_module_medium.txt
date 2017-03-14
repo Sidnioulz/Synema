@@ -1,0 +1,10 @@
+1 cfg80211
+1 hp_accel
+1 joydev
+1 lis3lv02d
+1 parport_pc
+1 ppdev
+1 psmouse
+1 serio_raw
+1 tpm_bios
+1 tpm_infineon

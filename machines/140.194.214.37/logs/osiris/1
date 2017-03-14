@@ -1,0 +1,28 @@
+     compare time: Thu Apr 29 18:22:06 2010
+             host: host2
+      scan config: default.linux (c8ce9c09)
+         log file: 1
+    base database: 1
+ compare database: 2
+
+[211][host2][cmp][/sbin][mtime][Thu Apr 29 11:32:34 2010][Thu Apr 29 18:20:42 2010]
+[213][host2][cmp][/sbin][ctime][Thu Apr 29 11:51:34 2010][Thu Apr 29 18:20:42 2010]
+[204][host2][cmp][/sbin/udevd][checksum][dbbaa1ac5f2ae4efbf0862697e0407e201fdfdb7][d685cf64b68583f48581bb588c3f422a8ab873ca]
+[206][host2][cmp][/sbin/udevd][inode][4381][9954]
+[211][host2][cmp][/sbin/udevd][mtime][Mon Apr 19 11:30:33 2010][Thu Apr 29 18:20:42 2010]
+[213][host2][cmp][/sbin/udevd][ctime][Thu Apr 29 11:51:35 2010][Thu Apr 29 18:20:42 2010]
+[215][host2][cmp][/sbin/udevd][bytes][108688][108690]
+
+
+Change Statistics:
+----------------------------------
+
+        checksums: 1
+       SUID files: 0
+ root-owned files: 2
+ file permissions: 0
+              new: 0
+          missing: 0
+
+total differences: 7
+

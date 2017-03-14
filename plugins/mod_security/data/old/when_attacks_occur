@@ -1,0 +1,39 @@
+#proc page
+#if @DEVICE in png,gif
+   scale: 0.6
+#endif
+
+#proc getdata
+file: log.dat
+fieldnames: time number_of_attack
+ 
+// Set up plotting area using proc areadef
+#proc areadef
+ // title: when attacks occur
+  rectangle: 1 1 4 4
+  xscaletype: time hh:mm:sec
+  xrange: 00:00:00 23:59:00
+  yrange: 0 3
+  xaxis.stubs: inc 1 hour
+  xaxis.stubformat: h
+  xaxis.autoyears: yes
+  yaxis.stubs: inc 10
+  yaxis.labeldetails: adjust=-0.3,0
+
+//find when an attack occur
+#proc processdata
+  action: count
+  field: 1
+
+
+//  draw red triangle points using proc scatterplot to show it
+#proc scatterplot
+  xfield: 1
+  yfield: 2
+
+  symbol: shape=triangle fillcolor=red  style=fillonly
+
+
+
+
+

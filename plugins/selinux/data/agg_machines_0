@@ -1,0 +1,25 @@
+#proc getdata
+ file: selinux_0.txt
+
+#proc tabulate
+ axis1: x
+ datafield1: 3
+
+#proc page 
+ backgroundcolor: white
+ color: black
+
+#proc areadef
+ rectangle: 1 2 7 6
+ xautorange: datafield=1
+ xaxis.stubs: inc
+ xaxis.label: Hour
+ yautorange: datafield=2
+ yaxis.stubs: inc
+ yaxis.label: Number of alerts
+
+#proc lineplot
+ yfield: 2
+ xfield: 1
+ linedetails: width=2 color=blue
+

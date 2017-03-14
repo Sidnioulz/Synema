@@ -1,0 +1,40 @@
+# POST PROJECT #
+ - make sure to get frames redraw on min/maximizing the window
+ - player_update_values_from_dbus: write the code for duration fetching
+ - write a frame error API that can handle a GList of errors, with ErrID's that can be unset
+ - survive to dbus respawns
+ - implement the non tooltip mode for frame error messages
+ - Prefabs:
+		frames with all the tools for a given machine
+		frames for each machine for a given tool
+
+ - User Manual
+ - Write a DEPS file and fix the CMakeLists.txt
+ - Embed the GtkInfoBar in a gtkversion>2.16 define and grey out the option if unavailable
+ - --help --version
+ - a Get Started document for plugin developers
+ - Developer Documentation
+ - frame_table_insert_at_pos, frame_table_move/swap (drag & drop for moving tabs)
+ - use g_get_system_tmp_dir for windows compatibility
+ - use g_get_system_data_dirs for each file and don't only grab the first synema folder
+ - rewrite the other students' code with glib
+ - watch for new machines and changes to current ones (gio)
+   GFileMonitor *g_file_monitor_directory (GFile *file, GFileMonitorFlags flags, GCancellable *cancellable, GError **error);
+ - use a GFileMonitor to detect when a plugin needs to refresh data
+ - warning area in the GUI for live alerts (each frame can tell something grave happened to a machine)
+ - Implement fullscreen mode
+ - Allow frames to save files
+ - frame_print and frame_warn and frame_err functions for plugin devs
+ - In frame_open_try_load_*, add a version number and error out on incompatibilites
+ - In frame_open_try_load_*, use GErrors to propagate errors
+ - positioning of the icons (share/ls/icons/hicolor ?)
+ - keyboard shortcuts
+ - setting: default size for new frames
+ - rewrite stack.c/h to use a FreeFunction given by the user for the members
+ - Implement the "Try nearest" mode for time period frame action errors
+ - make plugins' get_display_name return a const gchar *
+
+# TOOLS #
+G_SLICE=always-malloc G_DEBUG=gc-friendly valgrind --tool=memcheck --leak-check=full --leak-resolution=high --num-callers=20 ./BUILD/synema &> 
+dump
+ploticus -dir _current_reports_dir _current_script_file_

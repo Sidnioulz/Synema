@@ -1,0 +1,16 @@
+1 2 80 4
+2 2 22 8
+3 2 8888 0
+4 2 2265 2
+5 2 51413 3
+6 3 aes_generic 4
+7 3 cbc 3
+8 5 AVC::system_u::system_u 6
+9 6 APPVC 5
+10 6 SYSCALL 2
+11 10 failure 5
+12 11 COMMUNITY SIP TCP/IP message flooding directed to SIP proxy 50
+13 6 DAEMON_START 0
+14 6 CONFIG_CHANGE 2
+15 6 ANOM_PROMISCUOUS 2
+16 6 DAEMON_END 0

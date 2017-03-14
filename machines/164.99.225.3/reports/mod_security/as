@@ -1,0 +1,114 @@
+#proc page
+  pagesize: 20 4.5
+  #if @DEVICE in gif,png
+    scale: 0.5
+  #endif
+  title: Attacks Severity
+
+
+#set TIME = $time()
+#set Y = $tomin(@TIME)
+#set X = $arith(@Y-10)
+#set TIMEB = $frommin(@X)
+
+// Set up plotting area using proc areadef
+#proc areadef
+  title: Attacks Severity
+  rectangle: 1 1 4 4
+  xscaletype: time hh:mm:ss
+  xrange: @TIMEB  @TIME
+  yrange: 0 100
+  xaxis.stubs: inc 1 mm
+  xaxis.stubformat: mm
+  yaxis.stubs: inc 10
+  yaxis.labeldetails: adjust=-0.3,0
+
+// render legend 
+#proc legendentry
+sampletype: color
+label: Low
+details: green
+
+#proc legendentry
+sampletype: color
+label: Alerts
+details: orange
+
+#proc legendentry
+sampletype: color
+label: Critical
+details: red
+
+#proc legend
+  location: min+0.3 max
+  reverseorder: yes
+  seglen: 0.3"
+
+
+// Read and process data file 
+#proc getdata
+  file: graph1_ten_min.txt
+
+#proc tabulate
+  axis1: x
+  datafield1: 2
+  datafield2: 5
+  valuelist2: Alert,Emergency,Critical,Error,Info,Notice
+  savetable: graph1_ten_min.txt
+  
+
+
+// draw bars for Low Severity using proc bars
+// for Emergency
+#proc bars
+  lenfield: 3
+  locfield: 1
+  color: green
+  stackfield: *
+  outline: no
+  barsrange: @TIMEB @TIME
+  barwidth: 0.07
+  outline: yes
+  #saveas B
+//for Error
+#proc bars
+  #clone: B
+  lenfield: 5
+  color: green
+  stackfield: *
+//for Info
+#proc bars
+  #clone: B
+  lenfield: 6
+  color: green
+  stackfield: *
+//for Notice
+#proc bars
+  #clone: B
+  lenfield: 7
+  color: green
+  stackfield: *
+
+
+// draw bars for Alerts Severity, stacking them above Emergency, using proc bars
+#proc bars
+  #clone: B
+  lenfield: 2
+  color: orange
+  stackfield *
+  
+
+// draw bars for Critical Severity, stacking them above the others, using proc bars
+#proc bars
+  #clone: B
+  lenfield: 4
+  color: red
+  stackfield *
+  
+
+
+
+
+  
+
+

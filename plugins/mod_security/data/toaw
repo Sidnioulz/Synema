@@ -1,0 +1,49 @@
+#proc page
+textsize: 9
+
+// Set up plotting area using proc areadef
+#proc areadef
+//  title: type of attack
+  rectangle: 1 1 3 3
+xrange: 0 2
+yrange: 0 2
+
+
+//  specify data using proc getdata
+#proc getdata
+file: graph1_6_months.txt
+
+
+
+//  counting each action tha occur
+#proc tabulate
+  datafield1: 4
+  savetable: graph1_6_months.txt
+
+
+
+
+
+
+
+
+
+//  render the pie graph using proc pie
+#proc pie
+datafield: 2
+labelfield: 1
+//labelmode: legend
+//outlinedetails: none
+center: 2 2
+radius: 0.6
+// colors: dullyellow drabgreen pink powderblue lavender
+colors: auto
+//labelfarout: 1.3
+labelmode: line+label
+outlinedetails: color=black
+labelfarout: 0
+
+//  render the legend using entries made above, using proc legend
+//#proc legend
+//location: 3 2.6
+

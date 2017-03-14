@@ -1,0 +1,11 @@
+files_download 4
+source_code_compilation 1
+local_rebound 2
+forcing 1
+machine_administration 0
+program_execution 4
+files_edition 0
+files_manipulation 6
+machine_inspection 15
+files_unarchiving 4
+communication 0

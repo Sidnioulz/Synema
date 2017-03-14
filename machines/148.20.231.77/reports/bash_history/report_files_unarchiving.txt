@@ -1,0 +1,6 @@
+unzip 0
+tar 0
+bzip2 0
+gzip 0
+gunzip 0
+gcat 0

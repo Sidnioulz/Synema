@@ -1,0 +1,14 @@
+ls
+cat monfichier.txt 
+vim monfichier.txt 
+cat monfichier.txt 
+vim monfichier.txt 
+lss
+els
+ls
+exit
+cat monfichier.txt 
+vim monfichier.txt 
+exit
+ls
+exit

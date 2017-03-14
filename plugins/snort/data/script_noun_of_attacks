@@ -1,0 +1,24 @@
+#proc page
+textsize: 8
+#if @DEVICE in gif,png
+  scale: 1
+#endif
+
+//  specify data using proc getdata
+#proc getdata
+file: attacks
+
+//  render the pie graph using proc pie
+#proc pie
+datafield: 2
+labelfield: 1
+labelfmtstring: @@1 @@PCT%
+labelmode: line+label
+outlinedetails: color=black
+center: 3.5 6
+radius: 0.7
+// colors: dullyellow drabgreen pink powderblue lavender
+colors: auto
+labelfarout: 0
+explode: 0 0.2 0 
+wraplen: 28

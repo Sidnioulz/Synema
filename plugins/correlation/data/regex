@@ -1,0 +1,11 @@
+1 osiris ::time::compare time: ([a-zA-Z]{3}) ([a-zA-Z]{3})[ ]*([0-9]{1,2}) ([0-9]{2}):([0-9]{2}):([0-9]{2}) ([0-9]{4})
+2 osiris ::regex::[[]mod_ports[]][[]TCP:0:([0-9]*)[]]
+3 osiris ::regex::[[]mod_kmods[]][[]kern:([a-zA-Z0-9_]*)[]]
+4 selinux ::time::msg=audit\(([0-9]*)
+5 selinux ::regex::type=([A-Z_]*).*scontext=([a-zA-Z_]*).*tcontext=([a-zA-Z_]*)
+6 selinux ::regex::type=([A-Z_]*)
+7 snort ::time::([0-9]{2})/([0-9]{2})-([0-9]{2}):([0-9]{2}):([0-9]{2})
+8 snort ::regex::(Priority:) ([0-9])
+9 syslog ::time::([a-zA-Z]{3}) *([0-9]{2}) ([0-9]{2}):([0-9]{2}):([0-9]{2})
+10 syslog ::regex::Authentication (failure)
+11 snort ::regex::[]][.]*[)]* ([^[]*) [[]

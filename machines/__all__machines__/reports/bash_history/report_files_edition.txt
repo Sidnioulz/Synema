@@ -1,0 +1,5 @@
+vi 58
+nano 0
+emacs 58
+pico 0
+tr 0

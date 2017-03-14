@@ -1,0 +1,15 @@
+id 0
+who 0
+proc 132
+cpuinfo 132
+cd 801
+ls 212
+wc 0
+uname 203
+pwd 0
+head 0
+last 0
+uptime 0
+echo 0
+users 0
+hostname 0

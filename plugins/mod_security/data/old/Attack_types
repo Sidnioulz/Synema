@@ -1,0 +1,14 @@
+generic_attacks
+sql_injection
+sql_injection_attacks
+web_rules
+outbound
+protocol_violations
+protocol_anomalies
+requests_limits
+http_policy
+bad_robots
+enforcement
+correlation
+common_exceptions
+

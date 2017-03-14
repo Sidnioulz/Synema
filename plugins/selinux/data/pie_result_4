@@ -1,0 +1,30 @@
+#proc getdata
+file: selinux_4.txt
+
+#proc page
+backgroundcolor: white
+pagesize: 4 4
+color: black
+textsize: 9
+
+#proc tabulate
+//select: @@8 != ?
+datafield1: 12
+
+//  render the pie graph using proc pie
+#proc pie
+datafield: 2
+labelfmtstring: @@1 @@PCT%
+labelmode: line+label
+outlinedetails: color=black
+center: 1 2
+radius: 0.7
+colors: auto
+labelfarout: 1
+explode: 0.4 0 
+wraplen: 10
+
+//  render the legend using entries made above, using proc legend
+#proc legend
+location: 3 2.6
+                

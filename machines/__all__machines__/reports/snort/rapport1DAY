@@ -1,0 +1,53 @@
+Europe 77 12
+North_America 54 23
+South_America 54 13
+Africa 45 34
+Asia 76 54
+Oceania 2 54
+Europe 46 France 86 90
+Europe 46 Bosnia 54 32
+Europe 46 Italy 4 4
+Europe 46 Poland 3 14
+Europe 46 Hungary 86 90
+Europe 46 Ukraine 54 32
+Europe 46 Belarus 4 4
+Europe 46 Serbia 3 14
+Europe 46 Germany 86 90
+Europe 46 Spain 54 32
+Europe 46 United_Kingdom 4 4
+Europe 46 Netherland 3 14
+Europe 46 Portugal 86 90
+Europe 46 Switzerland 54 32
+Europe 46 Finland 3 14
+Europe 46 Norway 86 90
+Europe 46 Germany 54 32
+North_America 24 Alaska 800 65
+North_America 24 Mexico 800 65
+North_America 24 USA 800 65
+South_America 45 Brazil 87 45
+Asia 2 China 96 87
+Asia 2 Iran 96 87
+Asia 2 India 96 87
+Asia 2 Mongolia 96 87
+Asia 2 Saudi_Arabia 96 87
+Asia 2 Iraq 96 87
+Asia 2 Turkey 96 87
+Asia 2 Syria 96 87
+Asia 2 Turkmenistan 3 3
+Asia 2 Kazakhstan 96 87
+Oceania 3 Australia 54 43
+Africa 90 Maroco 23 45
+Africa 90 Algeria 76 3
+Africa 90 Libya 23 45
+Africa 90 Egypt 76 3
+Africa 90 Tunisia 23 45
+Africa 90 Western_Sahara 76 3
+Africa 90 Mauritania 23 45
+Africa 90 Mali 76 3
+Africa 90 Niger 23 45
+Africa 90 Chad 76 3
+Africa 90 Senegal 23 45
+Africa 90 Sierra_Leone 76 3
+Africa 90 Angola 23 45
+Africa 90 Zambia 76 3
+Middle_East 22 Iran 76 54

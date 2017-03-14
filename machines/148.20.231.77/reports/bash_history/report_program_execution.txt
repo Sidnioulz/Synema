@@ -1,0 +1,5 @@
+perl 0
+sh 12
+python 0
+nohup 0
+./ 76

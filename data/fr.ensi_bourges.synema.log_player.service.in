@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=fr.ensi_bourges.synema.log_player
+Exec=@CMAKE_INSTALL_PREFIX@/bin/synema-log-player-demo

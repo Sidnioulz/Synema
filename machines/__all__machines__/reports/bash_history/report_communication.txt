@@ -1,0 +1,6 @@
+wall 0
+mesg 0
+talk 0
+mail 0
+write 0
+halt 0

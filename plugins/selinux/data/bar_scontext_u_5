@@ -1,0 +1,29 @@
+// specify data using proc getdata
+#proc getdata
+file: selinux_5.txt
+
+
+#proc tabulate
+datafield1: 13
+
+#proc page
+backgroundcolor: white
+
+// set up plotting area using proc areadef
+#proc areadef
+  rectangle: 1 1 3 3.5
+yrange: 0 @NRECORDS+1
+ xautorange: datafield=2
+ xaxis.stubs: inc  
+  yaxis.stubs: datafields=1
+
+
+// render bars using proc bars
+#proc bars
+  horizontalbars: yes
+  color: rgb(0,0.5,0.8)
+  lenfield: 2
+  barwidth: 0.15
+  labeldetails: adjust=0,-0.03 color=rgb(0,0.5,0.8)
+  color: powderblue
+  showvalues: yes

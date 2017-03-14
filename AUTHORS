@@ -1,0 +1,31 @@
+== COORDINATORS ==
+Jean-Francois Lalande <jean-francois.lalande@ensi-bourges.fr>
+Patrice Clemente <patrice.clemente@ensi-bourges.fr>
+
+== WHOLE APPLICATION ==
+Steve Dodier <sidnioulz@gmail.com>
+Timothée Ravier <timothee.romain.ravier@gmail.com>
+	./data/*
+	./plugins/test/*
+	./src/*
+
+
+== DEMO PLAYER ==
+Nicolas Cornu <nicolas.cornu@ensi-bourges.fr>
+Steve Dodier <sidnioulz@gmail.com>
+
+== SPECIFIC CODE ==
+The Gedit developers
+	./src/gedit-spinner.c
+	./src/gedit-spinner.h
+
+
+== PLUGINS ==
+Zaina Afoulki <zaina.afoulki@ensi-bourges.fr>
+Aline Bousquet <aline.bousquet@ensi-bourges.fr>
+	./plugins/selinux/*
+
+
+== OTHER FILES ==
+Daniel Fore <Daniel.P.Fore@gmail.com>
+	./data/icons/synema-menu-button.svg

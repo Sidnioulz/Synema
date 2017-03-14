@@ -1,0 +1,3 @@
+netstat 0
+ping 0
+ss 2

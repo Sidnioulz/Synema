@@ -1,0 +1,84 @@
+     compare time: Sun Jan  3 17:12:44 2010
+             host: host2
+      scan config: default.linux (c8ce9c09)
+         log file: 26
+    base database: 24
+ compare database: 25
+
+[223][host2][cmp][mod_ports][TCP:0:2265][TCP:2265;local=0;remote=0;uid=113;inode=7017][TCP:2265;local=0;remote=0;uid=113;inode=7018]
+[223][host2][cmp][mod_ports][TCP:0:2266][TCP:2266;local=0;remote=0;uid=114;inode=7038][TCP:2266;local=0;remote=0;uid=114;inode=7040]
+[223][host2][cmp][mod_ports][TCP:0:51413][TCP:51413;local=0;remote=0;uid=1000;inode=12345][TCP:51413;local=0;remote=0;uid=1000;inode=22233]
+[223][host2][cmp][mod_ports][TCP:0:9091][TCP:9091;local=0;remote=0;uid=1000;inode=12347][TCP:9091;local=0;remote=0;uid=1000;inode=22235]
+[223][host2][cmp][mod_kmods][kern:aes_generic][aes_generic 27484 - aes_i586, Live 0xf9e3f000][aes_generic 27484 - aes_i586, Live 0xf9ecf000]
+[223][host2][cmp][mod_kmods][kern:aes_i586][aes_i586 8124 - - Live 0xf86a4000][aes_i586 8124 - - Live 0xf8b37000]
+[223][host2][cmp][mod_kmods][kern:arc4][arc4 1660 - - Live 0xf86a1000][arc4 1660 - - Live 0xf9554000]
+[223][host2][cmp][mod_kmods][kern:binfmt_misc][binfmt_misc 8356 - - Live 0xf80fc000][binfmt_misc 8356 - - Live 0xf80e8000]
+[223][host2][cmp][mod_kmods][kern:bitblit][bitblit 5372 - fbcon, Live 0xf8b52000][bitblit 5372 - fbcon, Live 0xf8b2a000]
+[223][host2][cmp][mod_kmods][kern:cbc][cbc 3516 - - Live 0xf8b7d000][cbc 3516 - - Live 0xf9130000]
+[223][host2][cmp][mod_kmods][kern:cfg80211][cfg80211 93052 - iwlagn,iwlcore,mac80211, Live 0xf9232000][cfg80211 93052 - iwlagn,iwlcore,mac80211, Live 0xf91e6000]
+[223][host2][cmp][mod_kmods][kern:dm_crypt][dm_crypt 12928 - - Live 0xf80e2000][dm_crypt 12928 - - Live 0xf80d2000]
+[223][host2][cmp][mod_kmods][kern:ecb][ecb 2524 - - Live 0xf8334000][ecb 2524 - - Live 0xf954b000]
+[223][host2][cmp][mod_kmods][kern:fbcon][fbcon 36640 - - Live 0xf8b72000][fbcon 36640 - - Live 0xf8b6e000]
+[223][host2][cmp][mod_kmods][kern:font][font 8124 - fbcon, Live 0xf8b5b000][font 8124 - fbcon, Live 0xf8b33000]
+[223][host2][cmp][mod_kmods][kern:hp_accel][hp_accel 11228 - - Live 0xf91b8000][hp_accel 11228 - - Live 0xf925e000]
+[223][host2][cmp][mod_kmods][kern:ieee1394][ieee1394 86596 - ohci1394, Live 0xf8368000][ieee1394 86596 - ohci1394, Live 0xf8b02000]
+[223][host2][cmp][mod_kmods][kern:input_polldev][input_polldev 3716 - lis3lv02d, Live 0xf919d000][input_polldev 3716 - lis3lv02d, Live 0xf9176000]
+[223][host2][cmp][mod_kmods][kern:ip_tables][ip_tables 11692 - iptable_filter, Live 0xf949f000][ip_tables 11692 - iptable_filter, Live 0xf947c000]
+[223][host2][cmp][mod_kmods][kern:iptable_filter][iptable_filter 3100 - - Live 0xf94ab000][iptable_filter 3100 - - Live 0xf9488000]
+[223][host2][cmp][mod_kmods][kern:iwlagn][iwlagn 109052 - - Live 0xf9462000][iwlagn 109052 - - Live 0xf9435000]
+[223][host2][cmp][mod_kmods][kern:iwlcore][iwlcore 112540 - iwlagn, Live 0xf941c000][iwlcore 112540 - iwlagn, Live 0xf93ef000]
+[223][host2][cmp][mod_kmods][kern:joydev][joydev 10272 - - Live 0xf9304000][joydev 10272 - - Live 0xf934b000]
+[223][host2][cmp][mod_kmods][kern:led_class][led_class 4096 - iwlcore,hp_accel, Live 0xf9193000][led_class 4096 - iwlcore,hp_accel, Live 0xf916c000]
+[223][host2][cmp][mod_kmods][kern:lis3lv02d][lis3lv02d 7452 - hp_accel, Live 0xf91ae000][lis3lv02d 7452 - hp_accel, Live 0xf917e000]
+[223][host2][cmp][mod_kmods][kern:lp][lp 8964 - - Live 0xf920b000][lp 8964 - - Live 0xf9146000]
+[223][host2][cmp][mod_kmods][kern:mac80211][mac80211 181076 - iwlagn,iwlcore, Live 0xf93c6000][mac80211 181076 - iwlagn,iwlcore, Live 0xf9399000]
+[223][host2][cmp][mod_kmods][kern:ohci1394][ohci1394 29900 - - Live 0xf86ae000][ohci1394 29900 - - Live 0xf86f0000]
+[223][host2][cmp][mod_kmods][kern:parport][parport 35340 - ppdev,parport_pc,lp, Live 0xf91ea000][parport 35340 - ppdev,parport_pc,lp, Live 0xf9132000]
+[223][host2][cmp][mod_kmods][kern:parport_pc][parport_pc 31940 - - Live 0xf92ab000][parport_pc 31940 - - Live 0xf91ba000]
+[223][host2][cmp][mod_kmods][kern:ppdev][ppdev 6688 - - Live 0xf9311000][ppdev 6688 - - Live 0xf9358000]
+[223][host2][cmp][mod_kmods][kern:psmouse][psmouse 56500 - - Live 0xf926c000][psmouse 56500 - - Live 0xf9220000]
+[223][host2][cmp][mod_kmods][kern:serio_raw][serio_raw 5280 - - Live 0xf9250000][serio_raw 5280 - - Live 0xf9204000]
+[223][host2][cmp][mod_kmods][kern:snd_hda_codec][snd_hda_codec 75708 - snd_hda_codec_analog,snd_hda_intel, Live 0xf8680000][snd_hda_codec 75708 - snd_hda_codec_analog,snd_hda_intel, Live 0xf9519000]
+[223][host2][cmp][mod_kmods][kern:snd_hda_codec_analog][snd_hda_codec_analog 59292 - - Live 0xf841d000][snd_hda_codec_analog 59292 - - Live 0xf8368000]
+[223][host2][cmp][mod_kmods][kern:snd_hda_intel][snd_hda_intel 26920 - - Live 0xf8695000][snd_hda_intel 26920 - - Live 0xf953b000]
+[223][host2][cmp][mod_kmods][kern:snd_hwdep][snd_hwdep 7200 - snd_hda_codec, Live 0xf80e8000][snd_hwdep 7200 - snd_hda_codec, Live 0xf94f8000]
+[223][host2][cmp][mod_kmods][kern:snd_mixer_oss][snd_mixer_oss 16028 - snd_pcm_oss, Live 0xf80d2000][snd_mixer_oss 16028 - snd_pcm_oss, Live 0xf94cb000]
+[223][host2][cmp][mod_kmods][kern:snd_page_alloc][snd_page_alloc 9156 - snd_hda_intel,snd_pcm, Live 0xf9130000][snd_page_alloc 9156 - snd_hda_intel,snd_pcm, Live 0xf9154000]
+[223][host2][cmp][mod_kmods][kern:snd_pcm][snd_pcm 75296 - snd_hda_intel,snd_hda_codec,snd_pcm_oss, Live 0xf831c000][snd_pcm 75296 - snd_hda_intel,snd_hda_codec,snd_pcm_oss, Live 0xf94ab000]
+[223][host2][cmp][mod_kmods][kern:snd_pcm_oss][snd_pcm_oss 37920 - - Live 0xf8411000][snd_pcm_oss 37920 - - Live 0xf94e3000]
+[223][host2][cmp][mod_kmods][kern:snd_rawmidi][snd_rawmidi 22208 - snd_seq_midi, Live 0xf9353000][snd_rawmidi 22208 - snd_seq_midi, Live 0xf92c3000]
+[223][host2][cmp][mod_kmods][kern:snd_seq][snd_seq 50224 - snd_seq_dummy,snd_seq_oss,snd_seq_midi,snd_seq_midi_event, Live 0xf932b000][snd_seq 50224 - snd_seq_dummy,snd_seq_oss,snd_seq_midi,snd_seq_midi_event, Live 0xf929b000]
+[223][host2][cmp][mod_kmods][kern:snd_seq_device][snd_seq_device 6920 - snd_seq_dummy,snd_seq_oss,snd_seq_midi,snd_rawmidi,snd_seq, Live 0xf9172000][snd_seq_device 6920 - snd_seq_dummy,snd_seq_oss,snd_seq_midi,snd_rawmidi,snd_seq, Live 0xf926b000]
+[223][host2][cmp][mod_kmods][kern:snd_seq_dummy][snd_seq_dummy 2656 - - Live 0xf9386000][snd_seq_dummy 2656 - - Live 0xf945c000]
+[223][host2][cmp][mod_kmods][kern:snd_seq_midi][snd_seq_midi 6432 - - Live 0xf9363000][snd_seq_midi 6432 - - Live 0xf92d3000]
+[223][host2][cmp][mod_kmods][kern:snd_seq_midi_event][snd_seq_midi_event 6940 - snd_seq_oss,snd_seq_midi, Live 0xf9342000][snd_seq_midi_event 6940 - snd_seq_oss,snd_seq_midi, Live 0xf92b2000]
+[223][host2][cmp][mod_kmods][kern:snd_seq_oss][snd_seq_oss 28576 - - Live 0xf9376000][snd_seq_oss 28576 - - Live 0xf92e6000]
+[223][host2][cmp][mod_kmods][kern:snd_timer][snd_timer 22276 - snd_pcm,snd_seq, Live 0xf9184000][snd_timer 22276 - snd_pcm,snd_seq, Live 0xf927d000]
+[223][host2][cmp][mod_kmods][kern:softcursor][softcursor 1756 - bitblit, Live 0xf8b3a000][softcursor 1756 - bitblit, Live 0xf8b23000]
+[223][host2][cmp][mod_kmods][kern:soundcore][soundcore 7264 - snd, Live 0xf913d000][soundcore 7264 - snd, Live 0xf9161000]
+[223][host2][cmp][mod_kmods][kern:tg3][tg3 109600 - - Live 0xf86e2000][tg3 109600 - - Live 0xf86a3000]
+[223][host2][cmp][mod_kmods][kern:tileblit][tileblit 2460 - fbcon, Live 0xf8b63000][tileblit 2460 - fbcon, Live 0xf8b3b000]
+[223][host2][cmp][mod_kmods][kern:tpm][tpm 15680 - tpm_infineon, Live 0xf91c8000][tpm 15680 - tpm_infineon, Live 0xf9244000]
+[223][host2][cmp][mod_kmods][kern:tpm_bios][tpm_bios 6268 - tpm, Live 0xf91a5000][tpm_bios 6268 - tpm, Live 0xf9238000]
+[223][host2][cmp][mod_kmods][kern:tpm_infineon][tpm_infineon 8200 - - Live 0xf91d4000][tpm_infineon 8200 - - Live 0xf9250000]
+[223][host2][cmp][mod_kmods][kern:uvcvideo][uvcvideo 59080 - - Live 0xf92e9000][uvcvideo 59080 - - Live 0xf9330000]
+[223][host2][cmp][mod_kmods][kern:v4l1_compat][v4l1_compat 14496 - uvcvideo,videodev, Live 0xf91ff000][v4l1_compat 14496 - uvcvideo,videodev, Live 0xf92f9000]
+[223][host2][cmp][mod_kmods][kern:vboxdrv][vboxdrv 121160 - vboxnetflt, Live 0xf8f8f000][vboxdrv 121160 - vboxnetflt, Live 0xf8402000]
+[223][host2][cmp][mod_kmods][kern:vboxnetadp][vboxnetadp 78344 - - Live 0xf8faf000][vboxnetadp 78344 - - Live 0xf8680000]
+[223][host2][cmp][mod_kmods][kern:vboxnetflt][vboxnetflt 84840 - - Live 0xf8fe0000][vboxnetflt 84840 - - Live 0xf8f85000]
+[223][host2][cmp][mod_kmods][kern:videodev][videodev 36736 - uvcvideo, Live 0xf92c6000][videodev 36736 - uvcvideo, Live 0xf930d000]
+[223][host2][cmp][mod_kmods][kern:x_tables][x_tables 16544 - ip_tables, Live 0xf9491000][x_tables 16544 - ip_tables, Live 0xf946b000]
+
+
+Change Statistics:
+----------------------------------
+
+        checksums: 0
+       SUID files: 0
+ root-owned files: 0
+ file permissions: 0
+              new: 0
+          missing: 0
+
+total differences: 63
+

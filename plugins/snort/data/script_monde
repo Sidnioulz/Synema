@@ -1,0 +1,159 @@
+#set SYM = "radius=0.08 shape=square style=filled"
+#setifnotgiven CGI = "http://ploticus.sourceforge.net/cgi-bin/showcgiargs"
+
+#proc page
+backgroundcolor: transparent
+color: white
+
+// read in the SNP map data file..
+#proc getdata
+file: data_report
+fieldnameheader: yes
+
+// group into bins 10 cM wide..
+filter:
+   ##set A = $numgroup( @@2, 1, mid )
+   @@1 @@A
+
+	#proc categories
+	axis: y
+	categories: 
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+		15
+		16
+		17
+		18
+		19
+		20
+		21
+		22
+		23
+		24
+		25
+		26
+		27
+		28
+		29
+		30
+		31
+		32
+		33
+		34
+		35
+		36
+		37
+		38
+		39
+		40
+
+// set up the plotting area
+#proc areadef
+rectangle: 0.01 0.01 6 3
+yscaletype: categories
+
+yaxis.stubs: usecategories
+yaxis.stubdetails: adjust=0.2,0
+yaxis.label: chromosome
+yaxis.axisline: no
+yaxis.tics: no
+
+xrange: 0 120
+xaxis.label: position (cM)
+xaxis.axisline: no
+xaxis.tics: no
+xaxis.stubs: inc 10
+xaxis.stubrange: 0
+xaxis.stubdetails: adjust=0,0.15
+
+
+
+// set up legend for color gradients..
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=red @SYM
+label: 80 to 100%
+tag: 80
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=orange @SYM
+label: 70 to 80%
+tag: 70
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=yellow @SYM
+label: 60 to 70%
+tag: 60
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=lightpurple @SYM
+label: 50 to 60%
+tag: 50
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=green @SYM
+label: 40 to 50%
+tag: 40
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=blue @SYM
+label: 30 to 40%
+tag: 35
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=gray(0) @SYM
+label: 20 to 30%
+tag: 25
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=gray(0.4) @SYM
+label: 10 to 20%
+tag: 8
+  
+#proc legendentry
+sampletype: symbol
+details: fillcolor=gray(0.8) @SYM
+label: 5 to 10%
+tag: 4
+
+#proc legendentry
+sampletype: symbol
+details: fillcolor=pink @SYM
+label: 1 to 5%
+tag: 1
+ 
+
+// use proc scatterplot to count # of instances and pick appropriate color from legend..
+#proc scatterplot
+yfield: x
+xfield: y
+cluster: yes
+dupsleg: yes
+  
+
+// display legend..
+#proc legend
+location: max-0.8 min+3
+textdetails: size=9 color=black
+frame: yes
+backcolor: white

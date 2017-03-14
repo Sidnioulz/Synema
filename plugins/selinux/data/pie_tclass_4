@@ -1,0 +1,27 @@
+#proc getdata
+file: selinux_4.txt
+
+#proc page
+backgroundcolor: white
+pagesize: 4 4
+color: black
+textsize: 9
+
+#proc tabulate
+//select: @@5 = AVC
+datafield1: 21
+
+#proc pie
+datafield: 2
+labelfmtstring: @@1 @@PCT%
+labelmode: line+label
+outlinedetails: color=black
+center: 1 2
+radius: 0.7
+colors: auto
+labelfarout: 0
+explode: 0.4 0 
+wraplen: 10
+
+#proc legend
+location: 3 2.6

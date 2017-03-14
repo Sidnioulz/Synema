@@ -1,0 +1,11 @@
+touch 0
+mkdir 0
+find 0
+mv 0
+cp 132
+rm 262
+chmod 0
+scp 0
+locate 136
+kill 0
+make 0

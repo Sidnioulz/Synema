@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node name="/fr/ensi_bourges/synema/log_player">
+	<interface name="fr.ensi_bourges.synema.log_player">
+		<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="interface"/>
+
+		<method name="Start">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="start" />
+			<arg type="t" name="start_date" direction="in" />
+			<arg type="t" name="duration" direction="in" />
+		</method>
+
+		<method name="Stop">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="stop" />
+		</method>
+
+		<method name="SetPaused">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="set_paused" />
+			<arg type="b" name="paused" direction="in" />
+		</method>
+
+		<method name="SetSpeed">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="set_speed" />
+			<arg type="d" name="speed" direction="in" />
+		</method>
+
+		<method name="SetBeginningDate">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="set_beginning_date" />
+			<arg type="t" name="date" direction="in" />
+		</method>
+
+		<method name="SetLength">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="set_length" />
+			<arg type="t" name="length" direction="in" />
+		</method>
+
+
+		<method name="Ping">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="ping" />
+			<arg type="b" name="ping" direction="out" />
+		</method>
+
+
+		<method name="GetState">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="get_state" />
+			<arg type="b" name="started" direction="out" />
+			<arg type="b" name="paused" direction="out" />
+		</method>
+		
+		<method name="GetStartDate">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="get_start_date" />
+			<arg type="t" name="date" direction="out" />
+		</method>
+		
+		<method name="GetDuration">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="get_duration" />
+			<arg type="t" name="duration" direction="out" />
+		</method>
+		
+		<method name="GetTimeLeft">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="get_time_left" />
+			<arg type="t" name="time" direction="out" />
+		</method>
+
+		<method name="GetSpeed">
+			<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="get_speed" />
+			<arg type="d" name="speed" direction="out" />
+		</method>
+		
+		
+		<signal name="DateBeingPlayed">
+			<arg type="t" name="time" direction="out" />
+		</signal>
+		
+		<signal name="PlaybackEnded">
+		</signal>
+	</interface>
+</node>

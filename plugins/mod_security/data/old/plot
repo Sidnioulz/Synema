@@ -1,0 +1,66 @@
+#proc page
+  pagesize: 20 4.5
+  #if @DEVICE in gif,png
+    scale: 0.5
+  #endif
+ // title: Attacks Severity
+
+
+// Set up plotting area using proc areadef
+#proc areadef
+//  title: Attacks Severity
+  rectangle: 1 1 4 4
+  xscaletype: time hh:mm
+  xrange: 00:01 16:21
+  yrange: 0 255
+  xaxis.stubs: inc 1 hour
+  xaxis.stubformat: h
+  xaxis.autoyears: yes
+  yaxis.stubs: inc 10
+  yaxis.labeldetails: adjust=-0.3,0
+
+// Read and process data file using proc getdata
+#proc getdata
+  file: log.dat
+
+#proc tabulate
+  axis1: x
+  datafield1: 2
+  datafield2: 1
+  valuelist2: Emergency, Alert, Critical, Error, Notice, Info
+  savetable: log.dat
+
+// draw bars for Critical Severity using proc bars
+#proc bars
+  lenfield: 2
+  locfield: 1
+  color: red
+  outline: no
+  barsrange: 00:01 16:21
+  legendlabel: Critical
+  barwidth: 0.07
+  outline: yes
+  #saveas B
+
+// draw bars for Alerts Severity, stacking them above Criticals, using proc bars
+#proc bars
+  #clone: B
+  lenfield: 3
+  color: orange
+  stackfields: 2
+  legendlabel: Alerts
+
+// draw bars for Low Severity, stacking them above the others, using proc bars
+//#proc bars
+//  #clone: B
+//  lenfield: 4
+//  color: green
+//  stackfields: 2 3
+//  legendlabel: Low
+
+// render legend using labels defined above (proc legend)
+#proc legend
+  location: min+0.3 max
+  reverseorder: yes
+  seglen: 0.3
+

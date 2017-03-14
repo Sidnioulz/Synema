@@ -1,0 +1,4 @@
+emerge 0
+apt 0
+halt 0
+su 0

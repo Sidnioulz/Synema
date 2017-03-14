@@ -1,0 +1,151 @@
+#call $setdatefmt( "dd/mm/yyyy" )
+#proc getdata
+ file: report
+ select: $datevalid(@@1) = 1
+ filter:
+  ##call $settimefmt(hh:mm:ss)
+  ##set RESULT = $formattime(@@2,"hh:mm") 
+    ##print @@1.@RESULT @RESULT @@3 @@4 @@5 @@6 @@1
+
+#proc page
+ backgroundcolor: white
+
+
+//Set constants 
+#call $setdatefmt( "dd/mm/yyyy" )
+#call $settimefmt("hh:mm")
+#set COLORLIST = blue,green,red,orange,yellow,claret
+#set COLORLIST2 = powderblue,yellowgreen,magenta,lightorange,dullyellow,pink
+
+
+//Define area and axis
+#proc areadef
+ xscaletype: datetime dd/mm/yyyy.hh:mm
+ xautorange: datafield=1
+ yrange: 0 @NRECORDS*5 
+
+#proc tabulate
+ select: $daysdiff( @TODAY, @7) < 1 && $timediff(@CURRENT_TIME,@2) < 21600
+ axis1: x
+ datafield1: 1
+ accumfield: 6
+
+ //exit if no log in the time period
+ #proc print
+ label: 
+
+ #if @NRECORDS = 0
+  #proc annotate
+   text:       Warning:
+   	   There is no logs 
+   	 in this time period.
+   
+   textdetails: align=C size=3
+  #exit
+ #endif
+
+#proc areadef
+ rectangle: 1 1 6 3
+ //xaxis, hour
+ xscaletype: datetime dd/mm/yyyy.hh:mm
+ xautorange: datafield=1
+ xaxis.stubformat: hh:mm
+ xaxis.stubs: inc 30 min 
+ xaxis.stubdetails: size=7
+ xaxis.stubcull: yes
+ xaxis.labeldistance: 0.45
+ xaxis.labeldetails: size=9 
+ xaxis.label: Time (hour)
+ 
+ //yaxis
+ yscaletype: log
+ yautorange: datafield=2  lowfix=0 
+ yaxis.stubs: inc 
+ yaxis.stubdetails: size=7
+ yaxis.stubcull: yes
+ yaxis.labeldetails: size=9 adjust=0,-0.4
+ yaxis.label: Criticality (log) \nSum and\nStandard Deviation 
+
+ //xaxis, day
+ #proc xaxis
+ stubs: inc 1 day
+ stubformat: ddMmm
+ stubdetails: adjust=0,-0.15
+
+
+//Create the sensorlist
+#proc usedata
+ pop: 1
+#proc processdata
+ select: $daysdiff( @TODAY, @7) < 1 && $timediff(@CURRENT_TIME,@2) < 21600
+ action: echo
+#proc print 
+ label: 
+
+#set SENSORLIST = $makelist("") 
+ #set I = 1
+ #while @I < @NRECORDS
+   #set TEST = $dataitem(@I, 3) 
+   #if @TEST !in @SENSORLIST
+       #set SENSORLIST = $addmember(@TEST, @SENSORLIST)
+   #endif
+   #set I = $arith(@I+1)
+ #endloop
+
+
+//Number of sensors in SENSORLIST
+#set I = 1
+#set NB_SENSORS = 0
+#set SENSOR = $nmember(1,@SENSORLIST)
+ #while @SENSOR in @SENSORLIST
+   #set NB_SENSORS = $arith(@NB_SENSORS+1)
+   #set I = $arith(@I+1)
+   #set SENSOR = $nmember(@I,@SENSORLIST)
+ #endloop
+
+
+//Draw bars
+#set I = 1
+#set SENSOR = $nmember(1,@SENSORLIST)
+#while @I <= @NB_SENSORS
+
+  #set COLOR = $nmember(@I,@COLORLIST)
+  #set COLOR2 = $nmember(@I,@COLORLIST2)
+   
+  #proc processdata
+   select: @@3 = @SENSOR 
+   action: summary
+   fields: 1
+   valfield: 6
+
+  //Sum bars 
+  #proc bars
+   locfield: 1
+   lenfield: sum
+   cluster: @I / @NB_SENSORS
+   color: @COLOR
+   barwidth: 0.03
+   outline: no
+   legendlabel: @SENSOR
+   
+  //Standard deviation bars
+  #proc bars
+   locfield: 1
+   lenfield: sd
+   cluster: @I / @NB_SENSORS
+   color: @COLOR2
+   barwidth: 0.03
+   outline: yes
+
+  #set I = $arith(@I+1)
+  #set SENSOR = $nmember(@I,@SENSORLIST)
+
+  #proc usedata
+   pop: 1
+
+#endloop   
+
+#proc legend
+ format: across
+ location: 1 0.5
+ sep: 0.5

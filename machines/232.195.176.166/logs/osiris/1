@@ -1,0 +1,32 @@
+     compare time: Mon Jun 27 17:12:57 2010
+             host: host2
+      scan config: default.linux (c8ce9c09)
+         log file: 23
+    base database: 21
+ compare database: 22
+
+[223][host2][cmp][mod_ports][TCP:0:2265][TCP:2265;local=0;remote=0;uid=113;inode=6402][TCP:2265;local=0;remote=0;uid=113;inode=7068]
+[223][host2][cmp][mod_ports][TCP:0:2266][TCP:2266;local=0;remote=0;uid=114;inode=6405][TCP:2266;local=0;remote=0;uid=114;inode=7089]
+[223][host2][cmp][mod_ports][TCP:0:51413][TCP:51413;local=0;remote=0;uid=1000;inode=12862][TCP:51413;local=0;remote=0;uid=1000;inode=46451]
+[223][host2][cmp][mod_ports][TCP:0:9091][TCP:9091;local=0;remote=0;uid=1000;inode=12864][TCP:9091;local=0;remote=0;uid=1000;inode=46453]
+[223][host2][cmp][mod_kmods][kern:aes_generic][aes_generic 27484 - aes_i586, Live 0xf9ff7000][aes_generic 27484 - aes_i586, Live 0xf9f2f000]
+[223][host2][cmp][mod_kmods][kern:aes_i586][aes_i586 8124 - - Live 0xf86f9000][aes_i586 8124 - - Live 0xf8b41000]
+[223][host2][cmp][mod_kmods][kern:arc4][arc4 1660 - - Live 0xf925a000][arc4 1660 - - Live 0xf94c5000]
+[223][host2][cmp][mod_kmods][kern:binfmt_misc][binfmt_misc 8356 - - Live 0xf832d000][binfmt_misc 8356 - - Live 0xf80e8000]
+[223][host2][cmp][mod_kmods][kern:bitblit][bitblit 5372 - fbcon, Live 0xf8b52000][bitblit 5372 - fbcon, Live 0xf8b4f000]
+[223][host2][cmp][mod_kmods][kern:cbc][cbc 3516 - - Live 0xf8fd9000][cbc 3516 - - Live 0xf9188000]
+[223][host2][cmp][mod_kmods][kern:cfg80211][cfg80211 93052 - iwlagn,iwlcore,mac80211, Live 0xf8402000][cfg80211 93052 - iwlagn,iwlcore,mac80211, Live 0xf91eb000]
+
+
+Change Statistics:
+----------------------------------
+
+        checksums: 0
+       SUID files: 0
+ root-owned files: 0
+ file permissions: 0
+              new: 0
+          missing: 1
+
+total differences: 63
+
