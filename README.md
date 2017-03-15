@@ -1,6 +1,6 @@
-## Official Website
-
-http://www.mupuf.org/project/synema.html
+## Official Websites
+* University website: https://traclifo.univ-orleans.fr/SYNEMA/
+* Project page of original core dev: http://www.mupuf.org/project/synema.html
 
 
 ## Dependencies
